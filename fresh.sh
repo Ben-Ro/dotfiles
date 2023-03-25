@@ -15,10 +15,6 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
-
 # Update Homebrew recipes
 brew update
 
@@ -33,7 +29,7 @@ brew bundle --file $DOTFILES/Brewfile
 pecl install imagick redis
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
+/usr/local/bin/composer global require laravel/installer
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
@@ -46,9 +42,6 @@ mkdir $HOME/Sites
 
 # Clone Github repositories
 $DOTFILES/clone.sh
-
-# Symlink the Mackup config file to the home directory
-ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source $DOTFILES/.macos

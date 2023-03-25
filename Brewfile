@@ -7,7 +7,6 @@ tap 'nicoverbruggen/homebrew-cask'
 # tap 'stripe/stripe-cli'
 
 # Binaries
-brew 'awscli'
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
@@ -15,12 +14,8 @@ brew 'gh'
 brew 'git'
 brew 'gnupg'
 brew 'grep'
-brew 'httpie'
-brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
-# brew 'stripe/stripe-cli/stripe'
-# brew 'stripe/stripe-mock/stripe-mock'
 brew 'svn' # Needed to install fonts
 
 # Spatie Medialibrary
@@ -32,53 +27,33 @@ brew 'gifsicle'
 
 # Development
 brew 'php'
-brew 'php@8.0'
-brew 'php@7.4'
 brew 'composer'
 brew 'imagemagick'
-brew 'meilisearch'
-# brew 'mysql'
-brew 'nginx'
+brew 'mysql'
+brew 'postgresql'
+brew 'pnpm'
 brew 'node'
 brew 'redis'
-brew 'yarn'
+brew 'yt-dlp'
 
 # Apps
-cask '1password'
-cask 'caffeine'
-cask 'dbngin'
-cask 'discord'
-cask 'docker'
-cask 'figma'
-cask 'firefox'
-# cask 'github'
 cask 'google-chrome'
 cask 'gpg-suite'
-# cask 'helo'
-# cask 'homebrew/cask-drivers/elgato-stream-deck'
+cask 'arq'
 cask 'imageoptim'
-cask 'insomnia'
-# cask 'pastebot'
-# cask 'phpmon'
 cask 'phpstorm'
-# cask 'ray'
-# cask 'screenflow'
-# cask 'slack'
-cask 'tableplus'
-cask 'telegram-desktop'
-# cask 'the-unarchiver'
-cask 'tinkerwell'
-# cask 'transmit'
-#cask 'tunnelbear'
-#cask 'tuple'
-cask 'visual-studio-code'
-#cask 'whatsapp'
-#cask 'zoom'
-cask 'around'
+cask 'whatsapp'
+cask 'signal'
+cask 'utm'
+cask 'tunnelblick'
+cask 'phpstorm'
+cask 'android-studio'
+cask 'webstorm'
+cask 'soundsource'
+cask 'moneymoney'
+cask 'zoom'
+cask 'adobe-creative-cloud'
 
-# Quicklook
-cask 'qlmarkdown'
-cask 'quicklook-json'
 
 # Fonts
 cask 'font-lato'
@@ -94,3 +69,8 @@ cask 'font-source-serif-pro'
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Overcast", id: 888422857
+mas "structured-tagesplaner", id: 1499198946
+mas "pwsafe-password-safe", id: 520993579
+mas "istat-menus", id: 1319778037
+mas "goodnotes-5", id: 1444383602
